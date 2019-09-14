@@ -21,7 +21,7 @@ def run_guessing_game
     puts "Goodbye!"
   end
 
-  if user_input == rand_num
+  if user_input == rand_num.to_s
     puts "You guessed the correct number!"
   else
     puts "Sorry! The computer guessed #{rand_num}."
