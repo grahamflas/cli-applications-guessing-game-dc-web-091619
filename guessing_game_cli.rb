@@ -1,5 +1,5 @@
 def get_rand_num
-  rand_num = rand(6)+ 1
+  rand_num = rand(1)+ 1
   return rand_num
 end
 
