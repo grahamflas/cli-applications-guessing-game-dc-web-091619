@@ -17,13 +17,22 @@ def run_guessing_game
   user_input = get_input
   rand_num = get_rand_num
 
-  if user_input == "exit"
-    puts "Goodbye!"
-  end
-
   if user_input == rand_num.to_s
     puts "You guessed the correct number!"
+  elsif
+    user_input == "exit"
+    puts "Goodbye!"
   else
     puts "Sorry! The computer guessed #{rand_num}."
   end
+
+  # if user_input == "exit"
+  #   puts "Goodbye!"
+  # end
+
+  # if user_input == rand_num.to_s
+  #   puts "You guessed the correct number!"
+  # else
+  #   puts "Sorry! The computer guessed #{rand_num}."
+  # end
 end
