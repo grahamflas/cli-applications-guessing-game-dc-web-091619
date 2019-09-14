@@ -1,5 +1,5 @@
 def get_rand_num
-  rand_num = rand(2)+ 1
+  rand_num = rand(6) + 1
   return rand_num
 end
 
@@ -19,9 +19,11 @@ def run_guessing_game
 
   if user_input == "exit"
     puts "Goodbye!"
-  elsif user_input == rand_num
+  end
+
+  if user_input == rand_num
     puts "You guessed the correct number!"
-  elsif user_input != rand_num
+  else
     puts "Sorry! The computer guessed #{rand_num}."
   end
 end
